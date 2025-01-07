@@ -1,0 +1,4 @@
+When a number data type is added to a string, js will convert the number to the common type of string and the answer will be a string.
+Using the == can cause a bug because if the operands are of different types, js will convert to a common a type and this can cause bugs. If == is used to compare arrays, it will return false even if the arrays contain the same values becuase js only compares array values by reference. Comparing falsy values such as 0, false, '', null, or undefined will also give unexpected results. It is recommened using === instead of == for stricter comparisons.
+% is a confusing operator, because it is called the remainder operand but it can be different than a remainder if negatve numbers are involved.
+I would use the modulus to calculate time calulations.  To use modulus for a time computation, for example minutes into hours and minutes, you would take minutes modulus 60 to get how many minutes are left after the time is separated into hours. 
